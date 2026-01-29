@@ -21,8 +21,8 @@ public class IntegerList implements IntegerListInterface {
 		if (numItems >= item.length || index < 0 || index > numItems) {
 			/*에러 처리*/
 		} else {
-			for (int i = numItems - 1; i >= index; i--) {
-				item[i + 1] = item[i];	// 우시프트
+			for (int i = numItems-1; i >= index; i--) {
+				item[i+1] = item[i];	// 우시프트
 			}
 			item[index] = x;
 			numItems++;
@@ -39,16 +39,36 @@ public class IntegerList implements IntegerListInterface {
 		}		
 	}
 
+	// [알고리즘 5-3] 구현: 배열 리스트의 k번째 원소 삭제하기
 	@Override
 	public Integer remove(int index) {
-		// TODO Auto-generated method stub
-		return null;
+		if (isEmpty() || index < 0 || index > numItems-1) {
+			return null;
+		} else {
+			Integer tmp = item[index];
+			for (int i = index; i < numItems-2; i++) {
+				item[i] = item[i+1];	// 좌시프트
+			}
+			numItems--;
+			return tmp;
+		}	
 	}
 
+	// [알고리즘 5-4] 구현: 배열 리스트에서 원소 x 삭제하기
 	@Override
 	public boolean removeItem(Integer x) {
-		// TODO Auto-generated method stub
-		return false;
+		int k = 0;
+		while (k < numItems && item[k].compareTo(x) != 0)
+			k++;
+		if (k == numItems) {
+			return false;
+		} else {
+			for (int i = 0; i < item.length; i++) {
+				item[i] = item[i+1];	// 좌시프트
+			}
+			numItems--;
+			return true;
+		}
 	}
 
 	@Override

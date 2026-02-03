@@ -101,10 +101,11 @@ public class IntegerList implements IntegerListInterface {
 		return false;
 	}
 
+	// [알고리즘 5-8(3)] 구현: 배열 리스트 깨끗이 청소하기
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
+		item = new Integer[item.length];
+		numItems = 0;
 	}	
 
 }

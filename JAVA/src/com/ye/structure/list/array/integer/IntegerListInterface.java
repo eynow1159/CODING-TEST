@@ -1,4 +1,4 @@
-package com.ye.structure.list.integer;
+package com.ye.structure.list.array.integer;
 
 public interface IntegerListInterface {
 	public void add(int index, Integer x);

@@ -1,5 +1,7 @@
 package com.ye.structure.list.array.generic;
 
+import com.ye.structure.list.ListInterface;
+
 public class ArrayList<E> implements ListInterface<E> {
 	private E[] item;
 	private int numItems;

@@ -1,4 +1,4 @@
-package com.ye.structure.list.array.generic;
+package com.ye.structure.list;
 
 public interface ListInterface<E> {
 	public void add(int index, E x);

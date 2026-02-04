@@ -74,7 +74,7 @@ public class ArrayList<E> implements ListInterface<E> {
 	// [알고리즘 5-5] 구현: 배열 리스트의 i번째 원소 알려주기
 	@Override
 	public E get(int index) {
-		if (index >= 0 && index <= numItems -1)
+		if (index >= 0 && index <= numItems-1)
 			return item[index];
 		else 
 			return null;
@@ -83,7 +83,7 @@ public class ArrayList<E> implements ListInterface<E> {
 	// [알고리즘 5-6] 구현: 배열 리스트의 i번째 원소를 x로 대체하기
 	@Override
 	public void set(int index, E x) {
-		if (index >= 0 && index <= numItems -1)
+		if (index >= 0 && index <= numItems-1)
 			item[index] = x;
 		else { /*에러 처리*/ }
 		

@@ -93,8 +93,7 @@ public class ArrayList<E> implements ListInterface<E> {
 	private final int NOT_FOUND = -12345;
 	@Override
 	public int indexOf(E x) {
-		int i = 0;
-		for (i = 0; i < numItems; i++) {
+		for (int i = 0; i < numItems; i++) {
 			if ( ((Comparable)item[i]).compareTo(x) == 0)
 				return i;
 		}

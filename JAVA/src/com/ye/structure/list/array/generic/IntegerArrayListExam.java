@@ -1,10 +1,10 @@
-package com.ye.structure.list.integer;
+package com.ye.structure.list.array.generic;
 
 public class IntegerArrayListExam {
 
 	public static void main(String[] args) {
-		IntegerArrayList list = new  IntegerArrayList();
-		list.add(0, 300);	// 오토 박싱
+		ArrayList<Integer> list = new  ArrayList<>();
+		list.add(0, 300);	// 오토 박싱으로 300은 Integer(300)으로 취급해준다
 		list.add(0, 200);
 		list.add(0, 100);
 		/* 100 200 300 */

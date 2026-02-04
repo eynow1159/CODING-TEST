@@ -1,4 +1,4 @@
-package com.ye.structure.list;
+package com.ye.structure.list.integer;
 
 public class IntegerArrayListExam {
 

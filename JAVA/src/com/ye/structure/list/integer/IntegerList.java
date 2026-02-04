@@ -1,16 +1,16 @@
-package com.ye.structure.list;
+package com.ye.structure.list.integer;
 
-public class IntegerArrayList implements IntegerListInterface {
+public class IntegerList implements IntegerListInterface {
 	private Integer[] item;
 	private int numItems;
 	private final int DEFAULT_CAPACITY = 64;
 	
-	public IntegerArrayList() {	// 생성자 1
+	public IntegerList() {	// 생성자 1
 		this.item = new Integer[DEFAULT_CAPACITY];
 		this.numItems = 0;
 	}
 	
-	public IntegerArrayList(int n) {	// 생성자 2
+	public IntegerList(int n) {	// 생성자 2
 		this.item = new Integer[n];
 		this.numItems = 0;
 	}
@@ -71,46 +71,34 @@ public class IntegerArrayList implements IntegerListInterface {
 		}
 	}
 
-	// [알고리즘 5-5] 구현: 배열 리스트의 i번째 원소 알려주기
 	@Override
 	public Integer get(int index) {
-		if (index >= 0 && index <= numItems -1)
-			return item[index];
-		else 
-			return null;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	// [알고리즘 5-6] 구현: 배열 리스트의 i번째 원소를 x로 대체하기
 	@Override
 	public void set(int index, Integer x) {
-		if (index >= 0 && index <= numItems -1)
-			item[index] = x;
-		else { /*에러 처리*/ }
+		// TODO Auto-generated method stub
 		
 	}
 
-	// [알고리즘 5-7] 구현: 원소 x가 배열 리스트의 몇 번째 원소인지 알려주기
-	private final int NOT_FOUND = -12345;
 	@Override
 	public int indexOf(Integer x) {
-		int i = 0;
-		for (i = 0; i < numItems; i++) {
-			if ( ((Comparable)item[i]).compareTo(x) == 0)
-				return i;
-		}
-		return NOT_FOUND;	// not exist
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
-	// [알고리즘 5-8(1)] 구현: 배열 리스트의 총 원소 수 알려주기
 	@Override
 	public int len() {
-		return numItems;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
-	// [알고리즘 5-8(2)] 구현: 배열 리스트가 비었는지 알려주기
 	@Override
 	public boolean isEmpty() {
-		return numItems == 0;
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	// [알고리즘 5-8(3)] 구현: 배열 리스트 깨끗이 청소하기

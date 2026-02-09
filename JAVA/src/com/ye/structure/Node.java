@@ -1,4 +1,4 @@
-package com.ye.structure.list.linked;
+package com.ye.structure;
 
 public class Node<E> {
 

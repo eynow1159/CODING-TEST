@@ -1,5 +1,6 @@
 package com.ye.structure.list.linked;
 
+import com.ye.structure.Node;
 import com.ye.structure.list.ListInterface;
 
 public class CircularLinkedList<E> implements ListInterface<E> {

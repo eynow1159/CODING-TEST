@@ -1,6 +1,4 @@
-package com.ye.structure.stack;
-
-import com.ye.structure.stack.linked.LinkedStack;
+package com.ye.structure.stack.linked;
 
 public class PostfixEval {
 

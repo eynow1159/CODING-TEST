@@ -1,6 +1,4 @@
-package com.ye.structure.stack;
-
-import com.ye.structure.stack.array.ArrayStack;
+package com.ye.structure.stack.array;
 
 public class ReverseString {
 

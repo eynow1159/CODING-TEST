@@ -1,4 +1,4 @@
-package com.ye.structure.stack.linked;
+package com.ye.structure.stack.list;
 
 import com.ye.structure.list.ListInterface;
 import com.ye.structure.list.linked.LinkedList;

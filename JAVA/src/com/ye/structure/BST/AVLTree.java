@@ -1,6 +1,8 @@
 package com.ye.structure.BST;
 
-public class AVLTree implements IndexInterface<AVLNode> {
+import com.ye.structure.IndexInterface;
+
+public class AVLTree implements IndexInterface<AVLNode, Comparable> {
 	private AVLNode root;
 	static final AVLNode NIL = new AVLNode(null, null, null, 0);
 	

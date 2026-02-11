@@ -1,6 +1,8 @@
 package com.ye.structure.BST;
 
-public class BinarySearchTree implements IndexInterface<TreeNode> {
+import com.ye.structure.IndexInterface;
+
+public class BinarySearchTree implements IndexInterface<TreeNode, Comparable> {
 	private TreeNode root;
 	public BinarySearchTree() {	// 생성자
 		root = null;

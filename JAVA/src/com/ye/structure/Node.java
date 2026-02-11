@@ -13,5 +13,9 @@ public class Node<E> {
 	public Node(E newItem, Node<E> nextNode) {
 		item = newItem;
 		next = nextNode;
-	}	
+	}
+
+	public E getItem() {
+		return item;
+	}		
 }
